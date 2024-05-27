@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/textures">
+        <file>textures/plus.png</file>
+        <file>textures/icon.png</file>
+        <file>textures/menuButton.png</file>
+        <file>textures/menuButton_active.png</file>
+        <file>textures/search.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>icon.ico</file>
+    </qresource>
+</RCC>

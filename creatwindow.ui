@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreatWindow</class>
+ <widget class="QDialog" name="CreatWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Створити нотатку</string>
+  </property>
+  <widget class="QTextEdit" name="noteText">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>89</y>
+     <width>600</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 18px;
+background-color: rgb(223, 223, 223);
+border: none;
+font: 15pt &quot;Britannic Bold&quot;;
+color:rgb(85, 85, 85);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>44</y>
+     <width>400</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(223, 223, 223);
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color:rgb(113, 114, 116);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>460</y>
+     <width>100</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(235, 94, 0);
+border-radius: 6px;
+color: white;
+font: 11pt &quot;Britannic Bold&quot;;
+}
+QPushButton:hover {
+background-color: rgb(200, 60, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Зберегти</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>400</y>
+     <width>184</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="styleSheet">
+       <string notr="true">border: none;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Britannic Bold&quot;;
+color: rgb(56, 57, 58);</string>
+      </property>
+      <property name="text">
+       <string>Нагадування</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>checkBox</zorder>
+   <zorder>label_2</zorder>
+   <zorder>dateEdit</zorder>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>380</y>
+     <width>220</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Britannic Bold&quot;;
+color: rgb(56, 57, 58);</string>
+   </property>
+   <property name="text">
+    <string>Дата на виконання (не обов'язково)</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>2051</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>405</y>
+     <width>201</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(223, 223, 223);
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color:rgb(113, 114, 116);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lineEdit_2</zorder>
+  <zorder>noteText</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>saveButton</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>line</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

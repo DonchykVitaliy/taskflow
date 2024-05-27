@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FolderWindow</class>
+ <widget class="QDialog" name="FolderWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Статистика</string>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>2051</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>-30</y>
+     <width>20</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>545</x>
+     <y>10</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 16pt &quot;Britannic Bold&quot;;
+color: rgb(43, 43, 44);</string>
+   </property>
+   <property name="text">
+    <string>Нещодавні</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EmptyLine">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>40</y>
+     <width>350</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(223, 223, 223);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EmptyText">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>47</y>
+     <width>120</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color: rgb(123, 124, 126);</string>
+   </property>
+   <property name="text">
+    <string>Історія очищена</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>145</x>
+     <y>10</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 16pt &quot;Britannic Bold&quot;;
+color: rgb(43, 43, 44);</string>
+   </property>
+   <property name="text">
+    <string>Статистика</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>240</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(235, 94, 0);
+border-radius: 6px;
+color: white;
+font: 11pt &quot;Britannic Bold&quot;;
+}
+QPushButton:hover {
+background-color: rgb(200, 60, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Очистити статистику</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearLastButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>280</y>
+     <width>160</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(235, 94, 0);
+border-radius: 6px;
+color: white;
+font: 11pt &quot;Britannic Bold&quot;;
+}
+QPushButton:hover {
+background-color: rgb(200, 60, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Очистити список
+нещодавніх</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearBasketButton">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>330</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(235, 94, 0);
+border-radius: 6px;
+color: white;
+font: 11pt &quot;Britannic Bold&quot;;
+}
+QPushButton:hover {
+background-color: rgb(200, 60, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Очистити кошик</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>300</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(200, 200, 200);
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>147</y>
+     <width>307</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(68, 69, 70);
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_3">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(255, 255, 0);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_4">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>190</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(0, 255, 0);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_5">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>190</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(255, 0, 0);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>191</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color: rgb(43, 43, 44);</string>
+   </property>
+   <property name="text">
+    <string>Нотаток</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>191</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color: rgb(43, 43, 44);</string>
+   </property>
+   <property name="text">
+    <string>Завершено</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>191</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color: rgb(43, 43, 44);</string>
+   </property>
+   <property name="text">
+    <string>Видалено</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_6">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>193</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(197, 199, 203);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_7">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>193</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(197, 199, 203);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="diagrama_8">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>193</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(197, 199, 203);
+border: none;</string>
+   </property>
+  </widget>
+  <zorder>diagrama_7</zorder>
+  <zorder>diagrama_8</zorder>
+  <zorder>diagrama_6</zorder>
+  <zorder>diagrama_2</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>label</zorder>
+  <zorder>EmptyLine</zorder>
+  <zorder>EmptyText</zorder>
+  <zorder>label_2</zorder>
+  <zorder>clearButton</zorder>
+  <zorder>clearLastButton</zorder>
+  <zorder>clearBasketButton</zorder>
+  <zorder>diagrama</zorder>
+  <zorder>diagrama_3</zorder>
+  <zorder>diagrama_4</zorder>
+  <zorder>diagrama_5</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

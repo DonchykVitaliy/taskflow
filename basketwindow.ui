@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BasketWindow</class>
+ <widget class="QDialog" name="BasketWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Кошик</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>219</x>
+     <y>33</y>
+     <width>62</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 16pt &quot;Britannic Bold&quot;;
+color: rgb(43, 43, 44);</string>
+   </property>
+   <property name="text">
+    <string>Кошик</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EmptyText">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;
+font: 12pt &quot;Britannic Bold&quot;;
+color: rgb(123, 124, 126);</string>
+   </property>
+   <property name="text">
+    <string>Кошик пустий</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EmptyLine">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>63</y>
+     <width>350</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(223, 223, 223);
+border: none;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>2051</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>63</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: rgb(235, 94, 0);
+border-radius: 6px;
+color: white;
+font: 11pt &quot;Britannic Bold&quot;;
+}
+QPushButton:hover {
+background-color: rgb(200, 60, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Очистити кошик</string>
+   </property>
+  </widget>
+  <zorder>EmptyLine</zorder>
+  <zorder>label</zorder>
+  <zorder>EmptyText</zorder>
+  <zorder>line</zorder>
+  <zorder>clearButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
